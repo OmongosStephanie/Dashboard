@@ -14,7 +14,7 @@
 /* Sidebar styles */
 .sidebar {
   width: 220px;
-  background-color: #f7f7f7;
+  background-color: #0f0202;
   color: #333;
   padding-top: 30px;
   position: fixed;
@@ -30,7 +30,7 @@
 .sidebar .logo h2 {
   font-size: 24px;
   font-weight: 600;
-  color: #2c3e50;
+  color: #eaedf0;
 }
 
 .sidebar .nav-links {
@@ -44,7 +44,7 @@
 }
 
 .sidebar .nav-links li a {
-  color: #7f8c8d;
+  color: #ecf1f1;
   text-decoration: none;
   display: block;
   font-size: 16px;
@@ -158,3 +158,33 @@
       padding: 15px;
   }
 }
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+td {
+  color: #333;
+}
+

@@ -30,94 +30,108 @@
                 <div class="dashboard-widgets">
                     <div class="widget">
                         <h3>Total Sales</h3>
-                        <p>$20,000</p>
+                        <p>₱5,000</p>
                     </div>
                     <div class="widget">
                         <h3>Revenue</h3>
-                        <p>$12,500</p>
+                        <p>₱1,200</p>
                     </div>
                     <div class="widget">
                         <h3>Expenses</h3>
-                        <p>$5,500</p>
+                        <p>₱500</p>
                     </div>
                     <div class="widget">
                         <h3>Profit</h3>
-                        <p>$7,000</p>
+                        <p>₱700</p>
                     </div>
                 </div>
             </section>
 
             <section id="users" class="content-section" style="display:none;">
                 <h1>Users</h1>
-                <div class="dashboard-widgets">
-                    <div class="widget">
-                        <h3>Total Users</h3>
-                        <p>500</p>
-                    </div>
-                    <div class="widget">
-                        <h3>Active Users</h3>
-                        <p>450</p>
-                    </div>
-                    <div class="widget">
-                        <h3>Inactive Users</h3>
-                        <p>50</p>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Inactive</td>
+                    </tr>
+                </table>
             </section>
 
             <section id="temp-users" class="content-section" style="display:none;">
                 <h1>Temp Users</h1>
-                <div class="dashboard-widgets">
-                    <div class="widget">
-                        <h3>Temporary Users</h3>
-                        <p>120</p>
-                    </div>
-                    <div class="widget">
-                        <h3>Active Temp Users</h3>
-                        <p>80</p>
-                    </div>
-                    <div class="widget">
-                        <h3>Expired Temp Users</h3>
-                        <p>40</p>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Emma Brown</td>
+                        <td>emma@example.com</td>
+                        <td>Expired</td>
+                    </tr>
+                </table>
             </section>
 
             <section id="total-users" class="content-section" style="display:none;">
                 <h1>Total No. of Users</h1>
-                <div class="dashboard-widgets">
-                    <div class="widget">
-                        <h3>Total Users</h3>
-                        <p>620</p>
-                    </div>
-                    <div class="widget">
-                        <h3>Active Users</h3>
-                        <p>530</p>
-                    </div>
-                    <div class="widget">
-                        <h3>Inactive Users</h3>
-                        <p>90</p>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Inactive</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Emma Brown</td>
+                        <td>emma@example.com</td>
+                        <td>Expired</td>
+                    </tr>
+                </table>
             </section>
         </div>
     </div>
 
     <script>
-        // Function to show the selected section and hide the others
         function showSection(sectionId) {
-            // Hide all sections
             const sections = document.querySelectorAll('.content-section');
             sections.forEach(section => section.style.display = 'none');
-            
-            // Show the selected section
             const selectedSection = document.getElementById(sectionId);
             if (selectedSection) {
                 selectedSection.style.display = 'block';
             }
         }
 
-        // Function to toggle sub-menu visibility
         function toggleSubMenu() {
             const subMenu = document.querySelector('.accounts .sub-menu');
             subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
